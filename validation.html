@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In Form</title>
+    <link rel="stylesheet" href="style.css">
+<style>
+	body {
+  	background-image: url('t2.png');
+	background-size: cover;
+	}
+h1{
+font-size: 50px;
+margin-top: 10px;
+  margin-left: 80px;
+color: white;
+}
+</style>
+</head>
+ 
+<body>
+<header>
+<a href="main.html" class="logo">Via.</a>
+</header>  
+<div class="wrapper login">
+        <div class="container">
+            <div class="col-left">
+                <div class="login-text">
+                    <h2>Welcome!</h2>
+                    <p>Create your account.<br></p>
+                    <a href="signup.html" class="btn">Sign Up</a>
+                </div>
+            </div>
+ 
+            <div class="col-right">
+                <div class="login-form" style="color: #021c9e">
+                    <h2>Login</h2>
+                    <form action="login.php" method="POST">
+                        <p>
+                            <label style="color: #021c9e">Username/Email address<span>*</span></label>
+                            <input type="text" placeholder="Username or Email" required>
+                        </p>
+                        <p>
+                            <label style="color: #021c9e">Password<span>*</span></label>
+                            <input type="password" id="password" placeholder="Password" required>
+                        </p>
+                        <p>
+                            <input type="submit" value="Sign In">
+                        </p>
+                        
+ 
+                    </form>
+                </div>
+            </div>
+  
+        </div>
+    </div>
+ 
+ 
+    <script type="text/javascript">
+    function validate()
+    {
+    var username = document.getElementById("username");
+            if (username.value == "" || (isNaN(username.value)==false))
+            {
+                alert("Please enter your correct name");
+                return false;
+            }
+    var email = document.getElementById("email");
+            if (email.value == "") {
+                //If the "Please Select" option is selected display error.
+                alert("Please enter your email ");
+                return false;
+            }
+    atpos = email.value.indexOf("@");
+    dotpos = email.value.lastIndexOf(".");
+     if (atpos < 1 || ( dotpos - atpos < 2 ))
+     {
+     alert("Please enter correct email ID");
+     document.getElementById("email").focus() ;
+     return false;
+    }
+     var pass = document.getElementById("password");
+            if (pass.value == "") {
+                //If the "Please Select" option is selected display error.
+                alert("Please enter your password");
+                return false;
+            }
+        }
+    </script>
+    </body>
+    </html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial scale=1.0">
+        <title>airport management system</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css" type="text/css">
+       <style>
+            body {
+            background-image: url('fllist8.jpg');
+            background-size: cover;
+            }
+                .flightlist {
+
+  border: 3px solid rgb(232, 179, 81);
+  border-radius: 20px;
+  padding: 20px;
+  color:rgb(0, 24, 77);
+  background-image: url('flights1.jpg');
+  background-size: cover;
+  margin: auto;
+  width: 50%;
+}
+
+#p1{
+    display: inline-block;
+    padding-left : 30px;
+    color:rgb(233, 198, 133);
+}
+#p2{
+    display: inline-block;
+    padding-left : 30px;
+    padding-top: 15px;
+    color:rgb(233, 198, 133);
+}
+h1{
+    color:rgb(255, 255, 255);
+}
+.ffl{
+    padding-left : 50px;
+}
+	    </style>
+    </head>
+    <body >
+        <header style="opacity : 0.9;">
+            <a href="main.html" class="logo">Via.</a>
+        </header>    
+        <br><br><br><br><br><br><br><br><br><br>
+        <form>
+        <div class="ffl">
+        <div style="text-align: center;">
+        <label style="font-size:17px">Number of tickets</label>
+<select class="custom-class" placeholder="select number" style="opacity:0.7">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+             </select>
+
+            <br>
+        
+
+    <br><br>
+        <input type="submit" class="btnstyle" value="Search flights">
+    </div>
+        
+<br><br>
+<div class="flightlist">
+                <label>First Name<span>*</span></label>
+                <input type="text" placeholder="enter first name" required>
+                <label style="padding-left : 8px;">Age<span>*</span></label>
+                <input type="text" placeholder="enter age" required>
+                <br><br>
+                <label>Last Name<span>*</span></label>
+                <input type="text" placeholder="enter last name" required>
+                <label style="padding-left : 8px;" for="phone-number">Passport NUMBER <abbr title="required">*</abbr></label>
+                <input type="tel" style="opacity:0.7" name="phone-number" id="phone-number" placeholder="0X-XXXX-XXXX" pattern="0[0-9][-/. ]?[0-9]{4}[-/. ]?[0-9]{4}" required>
+                <br><br>
+                <div class="radio" style="color:rgb(0, 24, 77);">
+                Gender : <input type="radio" name="check" value="male" style="opacity:0.7">M
+                <input type="radio"  name="check" value="female" style="opacity:0.7">F
+                <input type="radio" name="check" value="other" style="opacity:0.7">O
+                </div>
+                <br>
+            <div class="inputs">
+            <label style="font-size:17px">Date of birth</label>
+            <input type="date" style="opacity:0.7">
+            </div>
+
+        
+    </div> 
+    
+</div>
+                    <br>
+                </form>
+</html>
